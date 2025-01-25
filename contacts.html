@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliffplayts Ent Contact</title>
+    <link rel="stylesheet" href="cont.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="brand-name">
+            <img src="logo.png" alt="Brand Logo" class="brand-logo">
+            <h1 class="brand-title">Cliffplayts Ent</h1>
+        </div>
+        <div class="profile-circle" onclick="window.location.href='login.html'" style="margin-right: 20px;">
+            <img src="path/to/profile-icon.png" alt="Profile" style="width: 100%; height: 100%; border-radius: 50%;">
+        </div>
+    </div>
+    <div class="dropdown-menu" id="dropdownMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contacts.html">Contact</a>
+    </div>
+    <div class="container">
+        <div class="cards">
+            <a href="https://wa.me/254114873377" class="card whatsapp-card">
+                <h3>WhatsApp</h3>
+                <p style="display: none;">254114873377</p>
+            </a>
+            <a href="tel:0114873377" class="card mobile-card">
+                <h3>Mobile</h3>
+                <p style="display: none;">0114873377</p>
+            </a>
+            <a href="https://instagram.com/srt_cliff" class="card instagram-card">
+                <h3>Instagram</h3>
+                <p style="display: none;">@srt_cliff</p>
+            </a>
+        </div>
+        <!-- Other content from index file excluding sale cards -->
+        <!-- ...existing other content code... -->
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
